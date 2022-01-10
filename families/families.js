@@ -33,16 +33,21 @@ async function displayFamilies() {
 
         // put the family name in the name element
         familyNameEl.textContent = family.name;
-        
+
         // for each of this family's bunnies
-
-
-        // make an element with the css class 'bunny', and put the bunny's name in the text content
+        for (let bunny of family.bunny) {
+        // make an element with the css class 'bunny', and put the bunny's name in the text content   
+            const bunnyEl = document.createElement('p');
+            bunnyEl.classList.add('bunny');
+            bunnyEl.textContent = family.bunny;
         
         // add an event listener to the bunny el. On click, delete the bunny, then refetch and redisplay all families.
 
 
         // append this bunnyEl to the bunniesEl
+            
+            
+        }
     }
 
     // append the bunniesEl and nameEl to the familyEl
