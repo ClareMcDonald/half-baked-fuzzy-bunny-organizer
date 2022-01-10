@@ -5,6 +5,8 @@ import {
     logout,
 } from '../fetch-utils.js';
 
+import { renderBunny } from '../render-utils.js';
+
 checkAuth();
 
 const familiesEl = document.querySelector('.families-container');
